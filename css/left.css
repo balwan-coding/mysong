@@ -37,12 +37,16 @@
 }
 
 .footer {
-    position: absolute;
-    bottom: 1px;
     display: flex;
-    flex-wrap: wrap;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+
 }
 
 .footer a {
-    color: white;
+    color: grey;
 }

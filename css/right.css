@@ -1,6 +1,9 @@
 .right {
     width: 75vw;
     margin: 14px 0;
+    position: relative;
+    box-sizing: border-box;
+
 }
 
 .header {
@@ -68,4 +71,15 @@
     right: 17px;
     opacity: var(--a);
     transition: all 1s ease-out;
+}
+
+.playbar {
+    position: absolute;
+    bottom: 10px;
+    background-color: #3a3838;
+    width: 95%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
