@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.home ul li {
+    list-style: none;
+    width: 16px;
+    display: flex;
+    color: white;
+    gap: 15px;
+    padding-top: 14px;
+}
+
+.heading {
+    display: flex;
+    color: white;
+    gap: 15px;
+    padding-top: 14px;
+}
+
+
+.heading img {
+    width: 20px;
+}
+
+.library {
+    height: 80vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: white;
+}

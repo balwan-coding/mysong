@@ -1,0 +1,71 @@
+.right {
+    width: 75vw;
+    margin: 14px 0;
+}
+
+.header {
+    background-color: #3a3838;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons>button {
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+}
+
+.spotify-playlist {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: auto;
+    padding: 20px;
+    height: 70vh;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: all .9s;
+}
+
+.card:hover {
+    background-color: rgb(105, 103, 103);
+    cursor: pointer;
+    --a: 1;
+}
+
+.card>* {
+    padding-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 88px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
