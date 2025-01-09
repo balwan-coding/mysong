@@ -103,9 +103,26 @@
     width: 13px;
     height: 13px;
     border-radius: 13px;
-    background-color: black;
+    background-color: rgb(100, 98, 98);
     position: relative;
     bottom: 5px;
     left: 0%;
     transition: left 0.5s;
+}
+
+.songConten {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.songinfo {
+    padding: 0 12px;
+
+}
+
+.songtime {
+
+    padding: 0 12px;
 }

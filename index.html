@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Songs - Every time music</title>
+    <link rel="icon" type="image/svg+xml" href="/svg/logo.svg" />
     <link rel="stylesheet" href="css/left.css" />
     <link rel="stylesheet" href="css/utility.css" />
     <link rel="stylesheet" href="css/right.css" />
@@ -13,8 +14,8 @@
       <div class="left">
         <div class="p-1 m-1 rounded home bg-gray">
           <div class="flex items-center gap-1 logo">
-            <img class="text-white invert" src="svg/logo.svg" alt="" />
-            <span> Spotify</span>
+            <img class="text-white" src="svg/logo.svg" alt="" />
+            <span>My Songs</span>
           </div>
 
           <ul>
@@ -82,13 +83,20 @@
             <div class="seekbar">
               <div class="circle"></div>
             </div>
-            <div class="songinfo"></div>
-            <div class="songsbutton">
-              <img class="invert" src="svg/Previous.svg" alt="" />
-              <img class="invert" src="svg/play.svg" alt="" />
-              <img class="invert" src="svg/next.svg" alt="" />
+            <div class="songConten">
+              <div class="songinfo"></div>
+              <div class="songsbutton flex Justify-center">
+                <img
+                  id="previous"
+                  class="invert"
+                  src="svg/Previous.svg"
+                  alt=""
+                />
+                <img id="play" class="invert" src="svg/play.svg" alt="" />
+                <img id="next" class="invert" src="svg/next.svg" alt="" />
+              </div>
+              <div class="songtime"></div>
             </div>
-            <div class="somngiten"></div>
           </div>
         </div>
       </div>
