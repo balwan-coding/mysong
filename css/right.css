@@ -74,12 +74,38 @@
 }
 
 .playbar {
-    position: absolute;
-    bottom: 10px;
-    background-color: #3a3838;
-    width: 95%;
-    padding: 5px;
     display: flex;
     justify-content: center;
-    gap: 5px;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    background-color: #3a3838;
+    border-radius: 10px;
+    width: 90%;
+    padding: 12px;
+    width: 70vw;
+    min-height: 40px;
+}
+
+
+.seekbar {
+    height: 4px;
+    width: 98%;
+    background: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 8px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
 }
