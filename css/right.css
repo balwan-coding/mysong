@@ -126,3 +126,84 @@
 
     padding: 0 12px;
 }
+
+.humburger {
+    display: none;
+    cursor: pointer;
+}
+
+.humburgerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+@media (max-width: 1200px) {
+
+    .right {
+        width: 100vw;
+    }
+
+    .songinfo,
+    .songtime {
+        width: auto;
+    }
+
+    .playbar {
+        width: calc(100vw - 120px);
+    }
+
+    .seekbar {
+        width: calc(100vw - 120px);
+        right: 25px;
+    }
+
+    .humburger {
+        display: block;
+    }
+
+    .card {
+        width: 55vw;
+    }
+
+    .cards {
+        margin: 0;
+        justify-content: center;
+        max-height: unset;
+        overflow-y: unset;
+        margin-bottom: 35vh;
+    }
+
+
+    .songConten {
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:500px) {
+    .card {
+        width: 100%;
+    }
+
+    .header {
+        padding: 7px;
+    }
+
+    .header>* {
+        padding: 2px;
+    }
+
+    .buttons>* {
+        margin: 0 6px;
+    }
+
+    .spotify-playlist {
+        padding: 4px;
+    }
+
+
+}

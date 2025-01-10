@@ -94,3 +94,35 @@
 .songsbutton {
     gap: 10px;
 }
+
+@media (max-width:1200px) {
+    .left {
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        background-color: black;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+
+    .left .close {
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
+    }
+
+    .close {
+        display: block;
+    }
+}
+
+@media (max-width:500px) {
+    .left {
+        width: 100vw;
+    }
+}
