@@ -95,6 +95,10 @@
     gap: 10px;
 }
 
+.close {
+    display: none;
+}
+
 @media (max-width:1200px) {
     .left {
         position: absolute;

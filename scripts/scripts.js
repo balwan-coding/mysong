@@ -106,6 +106,42 @@ async function main() {
   document.querySelector(".close").addEventListener("click", () => {
     document.querySelector(".left").style.left = "-120%";
   });
+
+  previous.addEventListener("click", () => {
+    currentSong.pause();
+    let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
+    if (index - 1 >= 0) {
+      playMusic(songs[index - 1]);
+    }
+  });
+
+  next.addEventListener("click", () => {
+    currentSong.pause();
+    let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
+    if (index + 1 < songs.length) {
+      playMusic(songs[index + 1]);
+    }
+  });
+
+  document
+    .querySelector(".range")
+    .getElementsByTagName("input")[0]
+    .addEventListener("change", (e) => {
+      currentSong.volume = parseInt(e.target.value) / 100;
+    });
 }
+
+//  document
+//    .querySelector(".range")
+//    .getElementsByTagName("input")[0]
+//    .addEventListener("change", (e) => {
+//      console.log("Setting volume to", e.target.value, "/ 100");
+//      currentSong.volume = parseInt(e.target.value) / 100;
+//      if (currentSong.volume > 0) {
+//        document.querySelector(".volume>img").src = document
+//          .querySelector(".volume>img")
+//          .src.replace("mute.svg", "volume.svg");
+//      }
+//    });
 
 main();

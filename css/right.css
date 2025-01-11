@@ -73,6 +73,10 @@
     transition: all 1s ease-out;
 }
 
+.buttons>* {
+    margin: 0 12px;
+}
+
 .playbar {
     display: flex;
     justify-content: center;
@@ -81,7 +85,7 @@
     bottom: 30px;
     background-color: #3a3838;
     border-radius: 10px;
-    width: 90%;
+    width: 98%;
     padding: 12px;
     width: 70vw;
     min-height: 40px;
@@ -116,6 +120,12 @@
     align-items: center;
 }
 
+.songsbutton {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
 
 .songinfo {
     padding: 0 12px;
@@ -139,6 +149,18 @@
     gap: 14px;
 }
 
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.range input {
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
 
     .right {
@@ -152,6 +174,7 @@
 
     .playbar {
         width: calc(100vw - 120px);
+        right: 25px;
     }
 
     .seekbar {
@@ -180,6 +203,14 @@
         flex-direction: column;
         gap: 23px;
         align-items: center;
+    }
+
+    .timevol {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 13px;
     }
 
 }
