@@ -40,7 +40,7 @@ async function getSongs(folder) {
   for (const song of songs) {
     songUL.innerHTML =
       songUL.innerHTML +
-      ` <li>
+      `<li>
                 <img class="invert" src="svg/music.svg" alt="" />
                 <div class="info">
                   <div>${song.replaceAll("%20", " ")}</div>
@@ -85,14 +85,16 @@ async function displayAlbums() {
   for (let index = 0; index < array.length; index++) {
     const e = array[index];
 
-    if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
+    if (e.href.includes("/songs")) {
       let folder = e.href.split("/").slice(-2)[0];
-
+      console.log("Folder204: ", folder);
       let a = await fetch(`/songs/${folder}/info.json`);
+      console.log("Folder205: ", folder);
+
       let response = await a.json();
       cards.innerHTML =
         cards.innerHTML +
-        `    <div data-folder="${folder}" class="card">
+        `<div data-folder="${folder}" class="card">
               <div class="play">
                 <img class="invert" src="svg/play.svg" alt="" />  
               </div>
