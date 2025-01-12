@@ -1,42 +1,31 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
 .flex {
     display: flex;
 }
 
-.flex-col {
-    flex-direction: column;
+.justify-center {
+    justify-content: center;
 }
 
 .items-center {
     align-items: center;
 }
 
-.Justify-center {
-    justify-content: center;
-}
-
-.Justify-between {
-    justify-content: space-between;
+.bg-black {
+    background-color: black;
+    color: white;
 }
 
 .invert {
     filter: invert(1);
 }
 
-.m-1 {
-    margin: 5px;
-}
-
-.bg-gray {
-    background-color: #1f1f1f;
-}
-
-.bg-black {
+.bg-grey {
     background-color: #121212;
-    color: white
-}
-
-.text-white {
-    color: white
 }
 
 .rounded {
@@ -44,20 +33,15 @@
 }
 
 .m-1 {
-    margin: 2px
+    margin: 5px;
 }
 
 .p-1 {
     padding: 10px;
 }
 
-.gap-1 {
-    gap: 3px
-}
 
-.wrap {
-    flex-wrap: wrap;
-}
+
 
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
