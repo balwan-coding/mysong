@@ -50,18 +50,18 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e1e1e;
+    background: #121212;
     /* Track background */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #575757;
+    background: #2f2f2f;
     /* Thumb color */
     border-radius: 6px;
     /* Rounded edges */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #777;
+    background: #3e3e3e;
     /* Thumb hover effect */
 }
