@@ -84,6 +84,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgb(34 34 34);
+    box-sizing: border-box;
 }
 
 .header>* {
@@ -159,6 +160,7 @@ body {
     outline: none;
     cursor: pointer;
     font-size: 16px;
+    width: 79px;
 }
 
 .signupbtn:hover {
@@ -172,13 +174,17 @@ body {
     color: black;
     padding: 10px;
     width: 79px;
+    height: 42.4px;
     cursor: pointer;
     font-size: 16px;
+    box-sizing: border-box;
+    border: none;
 }
 
 .loginbtn:hover {
     font-weight: bold;
     font-size: 17px;
+    padding: 9px;
 }
 
 
@@ -278,7 +284,7 @@ body {
     position: relative;
     bottom: 5px;
     left: 0%;
-    transition: left 0.5s;
+    transition: left .2s;
 }
 
 .songbuttons img {
@@ -348,6 +354,7 @@ body {
         right: 31px;
         top: 25px;
         width: 29px;
+        cursor: pointer;
     }
 
     .timevol {
